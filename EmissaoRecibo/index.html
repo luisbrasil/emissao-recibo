@@ -2,67 +2,92 @@
     <head>
         <title>Nota Promissória</title>
         <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Emissão de Recibo">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Luis Fernando Brasil">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="external-div">
+        <div class="formulario">
             <h1>Nota Promissória</h1>
             <div class="rows">
-                <div class="column" style="width: 30%;">
+                <div style="width: 25%;">
                     <label class="label-input">Qtd. promissória?</label>
                     <input type="number" id="qtdPromissoriaInput">
                 </div>
-                <div class="column" style="width: 30%;">
+                <div style="width: 25%;">
                     <label class="label-input">Valor das parcelas:</label>
                     <input type="number" id="valorParcelaInput" placeholder="00,00">
                 </div>
-                <div class="column" style="width: 25%;">
+                <div style="width: 25%;">
                     <label class="label-input">1º Vencimento:</label>
                     <input id="primeiroVencimentoInput" placeholder="00/00/0000">
                 </div>
             </div>
             <div class="rows">
-                <div class="column" style="width: 65%;">
+                <div style="width: 55%;">
                     <label class="label-input">Nome do Credor:</label>
-                    <input type="text" id="nomeCredorInput" style="width: 600;">
+                    <input type="text" id="nomeCredorInput">
                 </div>
-                <div class="column" style="width: 30%;">
+                <div style="width: 30%;">
                     <label class="label-input">CPF ou CNPJ do credor:</label>
                     <input type="text" id="cpfCnpjCredorInput">
-                    <p>Somente números</p>
+                    <p class="input-hint">Somente números</p>
                 </div>
             </div>
             <h3>DADOS DO DEVEDOR</h3>
             <hr>
             <div class="rows">
-                <label class="label-input">Nome do Devedor:</label>
-                <input type="text" id="nomeDevedorInput">
-                <label class="label-input">CPF ou CNPJ do devedor:</label>
-                <input type="text" id="cpfCnpjDevedorInput">
-                <p>Somente números</p>
+                <div style="width: 65%;">
+                    <label class="label-input">Nome do Devedor:</label>
+                    <input type="text" id="nomeDevedorInput">
+                </div>
+                <div style="width: 30%;">
+                    <label class="label-input">CPF ou CNPJ do devedor:</label>
+                    <input type="text" id="cpfCnpjDevedorInput">
+                    <p class="input-hint">Somente números</p>
+                </div>
             </div>
             <div class="rows">
-                <label class="label-input">Rua:</label>
-                <input type="text" id="ruaInput">
-                <label class="label-input">Ponto referência:</label>
-                <input type="text" id="pontoReferenciaInput">
+                <div style="width: 40%;">
+                    <label class="label-input">Rua:</label>
+                    <input type="text" id="ruaInput">
+                </div>
+                <div style="width: 40%;">
+                    <label class="label-input">Ponto referência:</label>
+                    <input type="text" id="pontoReferenciaInput">
+                </div>
             </div>
             <div class="rows">
-                 <label class="label-input">Número:</label>
-                <input type="text" id="numeroInput">
-                 <label class="label-input">Bairro:</label>
-                <input type="text" id="bairroInput">
+                <div style="width: 20%;">
+                    <label class="label-input">Número:</label>
+                    <input type="text" id="numeroInput">
+                </div>
+                <div style="width: 70%;">
+                    <label class="label-input">Bairro:</label>
+                    <input type="text" id="bairroInput">
+                </div>
             </div>
             <div class="rows">
-                 <label class="label-input">Cidade:</label>
-                <input type="text" id="cidadeInput">
-                 <label class="label-input">Estado:</label>
-                <input type="text" id="estadoInput">
-                 <label class="label-input">CEP:</label>
-                <input type="text" id="cepInput" placeholder="00000-000">
+                <div style="width: 50%;">
+                    <label class="label-input">Cidade:</label>
+                    <input type="text" id="cidadeInput">
+                </div>
+                <div style="width: 25%;">
+                    <label class="label-input">Estado:</label>
+                    <input type="text" id="estadoInput">
+                </div>
+                <div style="width: 25%;">
+                    <label class="label-input">CEP:</label>
+                    <input type="text" id="cepInput" placeholder="00000-000">
+                </div>
             </div>
             <div class="rows">
-                <label class="label-input">Observação: (opcional)</label>
-                <div>
+                <div style="width: 100%;">
+                    <label class="label-input">Observação: (opcional)</label>
+                </div>
+                <div style="width: 100%;">
                     <textarea name="observacao" id="obersavacaoText" cols="30" rows="3"></textarea>
                 </div>
             </div>
